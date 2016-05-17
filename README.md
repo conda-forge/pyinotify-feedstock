@@ -5,7 +5,7 @@ Home: http://github.com/seb-m/pyinotify
 
 Package license: MIT License
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Monitoring filesystems events with inotify on Linux. http://github.com/seb-m/pyinotify/wiki
 
@@ -69,9 +69,15 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pyinotify-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/pyinotify-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/pyinotify-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pyinotify-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pyinotify-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pyinotify-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyinotify/badges/version.svg)](https://anaconda.org/conda-forge/pyinotify)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyinotify/badges/downloads.svg)](https://anaconda.org/conda-forge/pyinotify)
 
 
 Updating pyinotify-feedstock
