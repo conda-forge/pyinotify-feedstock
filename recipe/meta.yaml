@@ -27,7 +27,7 @@ test:
 
 about:
     home: http://github.com/seb-m/pyinotify
-    license: MIT License
+    license: MIT
     summary: Monitoring filesystems events with inotify on Linux. http://github.com/seb-m/pyinotify/wiki
 
 extra:
