@@ -1,35 +1,35 @@
 {% set version = "0.9.6" %}
 
 package:
-    name: pyinotify
-    version: {{ version }}
+  name: pyinotify
+  version: {{ version }}
 
 source:
-    fn: pyinotify-{{ version }}.tar.gz
-    url: https://pypi.python.org/packages/source/p/pyinotify/pyinotify-{{ version }}.tar.gz
-    md5: 8e580fa1ff3971f94a6f81672b76c406
+  url: https://pypi.io/packages/source/p/pyinotify/pyinotify-{{ version }}.tar.gz
+  sha256: 9c998a5d7606ca835065cdabc013ae6c66eb9ea76a00a1e3bc6e0cfe2b4f71f4
 
 build:
-    number: 1000
-    skip: True  # [not linux]
-    script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 1000
+  skip: True  # [not linux]
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
-    build:
-        - python
-        - setuptools
-    run:
-        - python
+  build:
+    - python
+    - pip
+  run:
+    - python
 
 test:
-    imports:
-        - pyinotify
+  imports:
+    - pyinotify
 
 about:
-    home: http://github.com/seb-m/pyinotify
-    license: MIT
-    summary: Monitoring filesystems events with inotify on Linux. http://github.com/seb-m/pyinotify/wiki
+  home: http://github.com/seb-m/pyinotify
+  license: MIT
+  license_file: COPYING
+  summary: Monitoring filesystems events with inotify on Linux. http://github.com/seb-m/pyinotify/wiki
 
 extra:
-    recipe-maintainers:
-        - kwilcox
+  recipe-maintainers:
+    - kwilcox
